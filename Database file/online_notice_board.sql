@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 04, 2020 at 11:08 AM
--- Server version: 10.4.13-MariaDB
--- PHP Version: 7.2.31
+-- Generation Time: Jun 23, 2022 at 06:37 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -60,9 +60,9 @@ CREATE TABLE `notice` (
 --
 
 INSERT INTO `notice` (`nid`, `post_date`, `to_whom`, `title`, `message`) VALUES
-(1, '2020-10-13', 'To All', 'Title of Notice 1', 'jkjkjkj'),
-(2, '2020-10-13', 'To Class 12', 'Title of Notice 2', 'This is a testing message for class 12 student.'),
-(3, '2020-10-13', 'To Class 10', 'regarding extra class', 'This is to inform you all that we are going to take extra classes for all. so that we can cover the syllabus that has not been covered yet. bcoz of the covid 12 lockdown.');
+(1, '2020-10-13', 'To All', 'Holiday Notice', 'Namaste,\r\nThe school will be closed until further notice.\r\nNo classes will be conducted online or on campus.\r\nThank you '),
+(3, '2020-10-13', 'To Class 10', 'Regarding extra class', 'This is to inform you all that we are going to take extra classes for all. So that we can cover the syllabus that has not been covered yet. Because of the covid-19 lockdown.'),
+(5, '2022-06-24', 'To All', 'About Fee', 'Dear Parents, kindly consider this letter as a gentle reminder for the payment of your tuition fees installment which is due on 06/24. The amount to be paid in the upcoming installment is [amount]. It is requested to kindly pay the dues before the said date to avoid any additional charges.');
 
 -- --------------------------------------------------------
 
@@ -84,10 +84,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uid`, `fname`, `lname`, `email`, `password`, `class`) VALUES
-(1, 'ashok', 'Meena', 'ashok@gmail.com', 'ashok@123', 10),
-(2, 'Pramod', 'Meena', 'pramod@gmail.com', 'pramod@123', 12),
-(3, 'Sarika', 'Sharma', 'sarika@gmail.com', 'sarika@123', 8),
-(4, 'Rohit', 'Sharma', 'rohit@gmail.com', 'rohit@123', 10);
+(5, 'Kiran', 'tamang', 'kiran@gmail.com', '12345', 12),
+(6, 'User', 'User1', 'user@gmail.com', 'user1', 12);
 
 --
 -- Indexes for dumped tables
@@ -125,13 +123,13 @@ ALTER TABLE `admins`
 -- AUTO_INCREMENT for table `notice`
 --
 ALTER TABLE `notice`
-  MODIFY `nid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `nid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
