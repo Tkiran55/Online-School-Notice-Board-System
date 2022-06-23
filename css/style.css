@@ -1,0 +1,15 @@
+#header{
+  background: #2ECC71;
+  color: #FBFCFC ;
+  padding: 15px;
+  text-align:center;
+}
+#login_form{
+  padding-top: 75px;
+}
+#left_sidebar{
+  border-right: 2px solid black;
+}
+#container{
+  margin-left: 25px;
+}
